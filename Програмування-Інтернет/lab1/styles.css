@@ -1,0 +1,45 @@
+@import url(../styles.css);
+
+body.task {
+    align-items: flex-start;
+    font-size: 32px;
+    line-height: 1.5;
+}
+
+button, input[type=button] {
+    --fg: #4D4D4D;
+    --bg: #D3D3D3;
+}
+
+button:hover, input[type=button]:hover,
+button:active, input[type=button]:active {
+    --fg: #FFFFFF;
+    --bg: #0D6EFD;
+}
+
+button, input[type=button] {
+    background: var(--bg);
+    border: none;
+    border-radius: 8px;
+    color: var(--fg);
+    cursor: pointer;
+    font-size: 24px;
+
+    padding: 12px;
+}
+
+input, select {
+    background: #FFFFFF;
+    box-shadow: 0 0 8px #4D4D4D40;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    font-size: 16px;
+    padding: 12px;
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5em;
+}

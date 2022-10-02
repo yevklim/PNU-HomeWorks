@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лаб.1, Завд.4</title>
+    <link rel="stylesheet" href="./styles.css">
+
+    <script>
+        function calculate() {
+            const x = parseInt(main_form.t_x.value);
+            const y = parseInt(main_form.t_y.value);
+
+            if (isNaN(x) || isNaN(y)) {
+                throw new Error("Failed to parse input integers");
+            }
+
+            let result;
+
+            if (x < 10 || y > 3) {
+                result = x*x + y*y;
+            } else if (x > 2) {
+                result = x - y + x*x;
+            } else {
+                result = x ** 3 + 3 * x * y;
+            }
+
+            main_form.t_res.value = result;
+        }
+    </script>
+</head>
+<body class="task raleway">
+    <h2 class="poiret-one">
+        <a class="material-symbols-sharp goback" href="./index.html">arrow_back</a>
+        Лабораторна робота №1. Завдання №4
+    </h2>
+    <form id="main_form">
+        <input id="t_x" type="text" value="10">
+        <input id="t_y" type="text" value="-2">
+        <input type="button" value="Обчислити" onclick="calculate()">
+        <input id="t_res" type="text" placeholder="Результат" readonly>
+    </form>
+</body>
+</html>

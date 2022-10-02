@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лаб.1, Завд.3</title>
+    <link rel="stylesheet" href="./styles.css">
+
+    <script>
+        function fun(a) {
+            main_form.t_res.value = a;
+        }
+    </script>
+</head>
+<body class="task raleway" onLoad="fun('Відбулось завантаження сторінки');">
+    <h2 class="poiret-one">
+        <a class="material-symbols-sharp goback" href="./index.html">arrow_back</a>
+        Лабораторна робота №1. Завдання №3
+    </h2>
+    <form id="main_form">
+        <input type="text" size="100" value="onBlur" onFocus="fun('Текстове поле №1 сфокусоване');" onBlur="fun('Текстове поле №1 більше не сфокусоване');">
+        <input type="text" size="100" value="onMouseOver" onMouseOver="fun('Курсор знаходиться над текстовим полем №2');" onMouseOut="fun('Курсор більше не знаходиться над текстовим полем №2')">
+        <input type="text" size="100" id="t_res">
+    </form>
+</body>
+</html>
