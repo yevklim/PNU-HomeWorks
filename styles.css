@@ -63,7 +63,7 @@ body::before:hover {
 }
 
 body::after {
-    content: "© 2022 Yevhenii Klymentovskyi. License: Creative Commons Zero v1.0 Universal";
+    /* content: "© 2023 Yevhenii Klymentovskyi. License: Creative Commons Zero v1.0 Universal"; */
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 700;

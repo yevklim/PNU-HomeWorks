@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лаб.2, Завд.3</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./task3.js" defer></script>
+</head>
+<body class="task raleway">
+    <h2 class="poiret-one">
+        <a class="material-symbols-sharp goback" href="./index.html">arrow_back</a>
+        Лабораторна робота №2. Завдання №3
+    </h2>
+    <form id="main_form">
+        Строк
+        <input type="number" id="rows" min="1" max="100">
+        Стовпців
+        <input type="number" id="cols" min="1" max="100">
+        <input type="button" id="build_matrix" value="Побудувати матрицю">
+        <input type="button" id="calculate" value="Розрахувати">
+        <div class="table-container" style="margin-bottom: 32px;">
+            <table id="matrix"></table>
+        </div>
+    </form>
+</body>
+</html>
