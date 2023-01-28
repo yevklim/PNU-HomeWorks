@@ -1,0 +1,116 @@
+@import url(../styles.css);
+
+body.task {
+    align-items: flex-start;
+    font-size: 32px;
+    line-height: 1.5;
+}
+
+button, input[type=button] {
+    --fg: #4D4D4D;
+    --bg: #D3D3D3;
+}
+
+button:hover, input[type=button]:hover,
+button:active, input[type=button]:active {
+    --fg: #FFFFFF;
+    --bg: #0D6EFD;
+}
+
+button, input[type=button] {
+    background: var(--bg);
+    border: none;
+    border-radius: 8px;
+    color: var(--fg);
+    cursor: pointer;
+    font-size: 24px;
+
+    padding: 12px;
+}
+
+input, select {
+    background: #FFFFFF;
+    box-shadow: 0 0 8px #4D4D4D40;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    font-size: 16px;
+    padding: 12px;
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5em;
+}
+
+table {
+    background: #FFFFFF;
+    border: 2px solid #4D4D4D;
+    border-radius: 4px;
+    border-collapse: collapse;
+    box-shadow: 0 0 8px #4D4D4D40;
+    font-size: 16px;
+}
+
+td {
+    border: 2px solid #4D4D4D;
+    padding: 4px;
+    text-align: center;
+}
+
+.questions {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 8px;
+}
+
+.question {
+    display: flex;
+    flex-flow: column nowrap;
+    /* gap: 8px; */
+
+    background: #FFFFFF;
+    border-radius: 16px;
+    box-shadow: 0 0 8px #4D4D4D40;
+    padding: 4px;
+
+    font-size: 16px;
+}
+
+.question-text {
+    padding: 4px 16px;
+}
+
+.question-answers {
+    display: flex;
+    flex-flow: row wrap;
+    background: #4D4D4D20;
+    border-radius: 12px;
+
+    padding: 4px 16px;
+    flex-grow: 1;
+    gap: 12px;
+}
+
+.question-answer {
+    display: flex;
+    flex-flow: row nowrap;
+    white-space: break-spaces;
+    align-items: center;
+    gap: 4px;
+}
+
+.question-answers input {
+    box-shadow: none;
+}
+
+.question-answers input[type=text],
+.question-answers input[type=number] {
+    background: none;
+    border-radius: 0;
+    padding: 4px 0;
+    width: unset;
+    flex-grow: 1;
+    flex-basis: 0;
+}
