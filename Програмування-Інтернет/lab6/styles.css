@@ -1,0 +1,91 @@
+@import url(../styles.css);
+
+body.task {
+    align-items: flex-start;
+    font-size: 32px;
+    line-height: 1.5;
+}
+
+button, input[type=button], input[type=submit] {
+    --fg: #4D4D4D;
+    --bg: #D3D3D3;
+}
+
+button:hover, input[type=button]:hover, input[type=submit]:hover
+button:active, input[type=button]:active, input[type=submit]:active {
+    --fg: #FFFFFF;
+    --bg: #0D6EFD;
+}
+
+button, input[type=button], input[type=submit] {
+    background: var(--bg);
+    border: none;
+    border-radius: 8px;
+    color: var(--fg);
+    cursor: pointer;
+    font-size: 24px;
+
+    padding: 12px;
+}
+
+input, select {
+    background: #FFFFFF;
+    box-shadow: 0 0 8px #4D4D4D40;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    font-size: 16px;
+    padding: 12px;
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5em;
+}
+
+table {
+    background: #FFFFFF;
+    border: 2px solid #4D4D4D;
+    border-radius: 4px;
+    border-collapse: collapse;
+    box-shadow: 0 0 8px #4D4D4D40;
+    font-size: 16px;
+}
+
+td {
+    border: 2px solid #4D4D4D;
+    padding: 4px;
+    text-align: center;
+}
+
+td input {
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    text-align: inherit;
+    font: inherit;
+}
+
+.table-container {
+    max-width: 75vw;
+    max-height: 50vh;
+    overflow: auto;
+}
+label {
+    display: flex;
+    flex-flow: column wrap;
+    /* gap: 8px; */
+}
+input:required:valid {
+    background-image: url(1.svg);
+    background-position: right 50%;
+    background-repeat: no-repeat;
+    padding-right: 24px;
+}
+input:required:invalid {
+    color: red;
+    border: 4px double;
+}

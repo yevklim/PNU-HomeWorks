@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лаб.6, Завд.2</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./task2.js" defer></script>
+</head>
+<body class="task raleway">
+    <h2 class="poiret-one">
+        <a class="material-symbols-sharp goback" href="./index.html">arrow_back</a>
+        Лабораторна робота №6. Завдання №2
+    </h2>
+    <form id="task2_form">
+        <label>
+            Ім'я <input type="text" name="firstName" id="firstName" required pattern="^[A-ZА-ЯІЇЄ][а-яіїєa-z]+$">
+        </label>
+        <label>
+            Прізвище <input type="text" name="lastName" id="lastName" required pattern="^[A-ZА-ЯІЇЄ][а-яіїєa-z]+$">
+        </label>
+        <label>
+            Логін <input type="text" name="login" id="login" required pattern="^[a-zA-Z]+$">
+        </label>
+        <label>
+            Пароль <input type="password" name="password" id="password" required>
+        </label>
+        <label>
+            Поштовий індекс <input type="text" name="postalCode" id="postalCode" pattern="^\d{5}$" required>
+        </label>
+        <label>
+            Адрес електронної пошти <input type="email" name="email" id="email" required>
+        </label>
+        <input type="submit" value="Зареєструватися" id="signIn">
+    </form>
+</body>
+</html>
